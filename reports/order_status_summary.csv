@@ -1,0 +1,6 @@
+order_status,total_orders,percentage
+Delivered,80679,80.68
+Cancelled,8073,8.07
+Returned,6681,6.68
+Failed,2880,2.88
+Processing,1687,1.69

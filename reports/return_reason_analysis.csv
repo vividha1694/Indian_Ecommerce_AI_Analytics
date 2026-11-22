@@ -1,0 +1,9 @@
+return_reason,total_returns,total_refund_amount,completed_refunds,pending_returns
+Size issue,2201,18116524.75,1536.0,175.0
+Changed mind,1984,18838506.2,1368.0,157.0
+Product damaged,1933,16251303.05,1368.0,115.0
+Quality issue,1692,16681425.3,1189.0,120.0
+Product not as expected,1442,12447004.2,987.0,113.0
+Wrong product,1394,12568876.95,978.0,93.0
+Late delivery,960,7727770.75,704.0,70.0
+Other,469,3266970.6,343.0,29.0

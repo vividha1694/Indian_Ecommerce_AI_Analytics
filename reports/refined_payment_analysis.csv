@@ -1,0 +1,11 @@
+payment_method,total_transactions,successful_transactions,failed_transactions,refunded_transactions,pending_transactions,not_charged_transactions,attempt_success_rate_percent
+UPI,31971,26247.0,1967.0,3691.0,66.0,0.0,93.03
+Cash on Delivery,17274,14176.0,0.0,1177.0,45.0,1876.0,100.0
+Credit Card,15063,12335.0,891.0,1802.0,35.0,0.0,93.26
+Debit Card,12682,10373.0,794.0,1484.0,31.0,0.0,92.89
+Net Banking,8322,6854.0,488.0,961.0,19.0,0.0,93.35
+Wallet,6989,5768.0,426.0,776.0,19.0,0.0,93.12
+EMI,3889,3233.0,247.0,405.0,4.0,0.0,92.9
+Pay Later,1825,1515.0,119.0,186.0,5.0,0.0,92.72
+Gift Card,1046,863.0,63.0,118.0,2.0,0.0,93.2
+Cardless EMI,939,773.0,73.0,90.0,3.0,0.0,91.37

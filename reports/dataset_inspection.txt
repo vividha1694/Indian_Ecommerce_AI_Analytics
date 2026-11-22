@@ -1,0 +1,489 @@
+=================================================================
+INDIAN E-COMMERCE DATASET INSPECTION
+=================================================================
+
+Total CSV files found: 11
+
+=================================================================
+FILE NAME: customers.csv
+=================================================================
+Rows: 25000
+Columns: 18
+
+COLUMN NAMES:
+- customer_id
+- customer_signup_date
+- gender
+- age
+- age_group
+- state
+- city
+- pincode_prefix
+- customer_segment
+- preferred_device
+- preferred_payment_method
+- acquisition_channel
+- total_orders
+- total_spend
+- last_order_date
+- average_order_value
+- customer_status
+- loyalty_tier
+
+DATA TYPES:
+customer_id                     str
+customer_signup_date            str
+gender                          str
+age                         float64
+age_group                       str
+state                           str
+city                            str
+pincode_prefix                int64
+customer_segment                str
+preferred_device                str
+preferred_payment_method        str
+acquisition_channel             str
+total_orders                  int64
+total_spend                 float64
+last_order_date                 str
+average_order_value         float64
+customer_status                 str
+loyalty_tier                    str
+
+MISSING VALUES:
+age                  250
+preferred_device     125
+last_order_date     2300
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+customer_id customer_signup_date gender  age age_group          state      city  pincode_prefix customer_segment preferred_device preferred_payment_method acquisition_channel  total_orders  total_spend last_order_date  average_order_value customer_status loyalty_tier
+ CUST100000           2023-01-09   Male 44.0     35-44 Madhya Pradesh    Indore             607          Regular       Mobile App                      EMI           Affiliate             3     36884.57      2023-05-26             12294.86         Churned       Bronze
+ CUST100001           2023-04-10   Male 20.0     18-24    West Bengal   Kolkata             245          Regular       Mobile App         Cash on Delivery      Organic Search             7    371585.73      2024-05-23             53083.68         Churned         Gold
+ CUST100002           2025-05-09 Female 35.0     35-44        Gujarat Ahmedabad             160          Premium       Mobile Web                      UPI       SMS Marketing            10    114901.74      2025-07-14             11490.17         At Risk       Silver
+
+=================================================================
+FILE NAME: customer_reviews.csv
+=================================================================
+Rows: 77530
+Columns: 8
+
+COLUMN NAMES:
+- review_id
+- order_id
+- customer_id
+- product_id
+- review_date
+- rating
+- review_sentiment
+- verified_purchase
+
+DATA TYPES:
+review_id              str
+order_id               str
+customer_id            str
+product_id             str
+review_date            str
+rating               int64
+review_sentiment       str
+verified_purchase     bool
+
+MISSING VALUES:
+review_sentiment    233
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+review_id   order_id customer_id product_id review_date  rating review_sentiment  verified_purchase
+REV100000 ORD1000002  CUST120793  PROD10470  2024-12-30       4         Positive               True
+REV100001 ORD1000005  CUST123408  PROD10085  2025-02-04       4         Positive               True
+REV100002 ORD1000005  CUST123408  PROD10233  2025-01-27       5         Positive               True
+
+=================================================================
+FILE NAME: dataset_validation_report.csv
+=================================================================
+Rows: 43
+Columns: 5
+
+COLUMN NAMES:
+- validation_check
+- expected_condition
+- actual_result
+- status
+- notes
+
+DATA TYPES:
+validation_check      str
+expected_condition    str
+actual_result         str
+status                str
+notes                 str
+
+MISSING VALUES:
+notes    42
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+   validation_check expected_condition actual_result status notes
+customers row count           >= 25000         25000   PASS   NaN
+ products row count             >= 500           550   PASS   NaN
+   orders row count          >= 100000        100000   PASS   NaN
+
+=================================================================
+FILE NAME: data_dictionary.csv
+=================================================================
+Rows: 106
+Columns: 8
+
+COLUMN NAMES:
+- table_name
+- column_name
+- data_type
+- description
+- example
+- allowed_values
+- nullable
+- business_meaning
+
+DATA TYPES:
+table_name          str
+column_name         str
+data_type           str
+description         str
+example             str
+allowed_values      str
+nullable            str
+business_meaning    str
+
+MISSING VALUES:
+No missing values found.
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+table_name          column_name data_type                  description    example           allowed_values nullable business_meaning
+ customers          customer_id    string   Unique customer identifier CUST100001               CUSTxxxxxx       No      Primary key
+ customers customer_signup_date      date Date the customer registered 2023-04-12 2023-01-01 to 2025-12-31       No Acquisition date
+ customers               gender    string         Self-reported gender     Female        Male/Female/Other       No      Demographic
+
+=================================================================
+FILE NAME: marketing_campaigns.csv
+=================================================================
+Rows: 151
+Columns: 14
+
+COLUMN NAMES:
+- campaign_id
+- campaign_name
+- channel
+- campaign_start_date
+- campaign_end_date
+- campaign_type
+- target_segment
+- discount_percentage
+- conversions
+- revenue_generated
+- impressions
+- clicks
+- campaign_cost
+- roi
+
+DATA TYPES:
+campaign_id                str
+campaign_name              str
+channel                    str
+campaign_start_date        str
+campaign_end_date          str
+campaign_type              str
+target_segment             str
+discount_percentage      int64
+conversions              int64
+revenue_generated      float64
+impressions              int64
+clicks                   int64
+campaign_cost          float64
+roi                    float64
+
+MISSING VALUES:
+No missing values found.
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+campaign_id                                campaign_name                  channel campaign_start_date campaign_end_date      campaign_type target_segment  discount_percentage  conversions  revenue_generated  impressions  clicks  campaign_cost   roi
+   CAMP1001         Direct/App Festival Special Jan 2023               Direct/App          2023-01-06        2023-01-23 New Product Launch        Premium                   20           27          698500.58          606     166       97919.42 6.133
+   CAMP1002 Social Media - Instagram Flash Sale Jan 2023 Social Media - Instagram          2023-01-02        2023-01-11    Loyalty Program        Premium                   25           10          262727.62        18769     359       83998.79 2.128
+   CAMP1003   Organic Search New Product Launch Jan 2023           Organic Search          2023-01-03        2023-01-18      Seasonal Sale        Regular                   30           40         1640037.86         2155     452      418495.64 2.919
+
+=================================================================
+FILE NAME: orders.csv
+=================================================================
+Rows: 100000
+Columns: 16
+
+COLUMN NAMES:
+- order_id
+- customer_id
+- order_date
+- order_time
+- order_status
+- shipping_method
+- delivery_city
+- delivery_state
+- coupon_code
+- discount_percentage
+- marketing_channel
+- subtotal
+- shipping_fee
+- tax_amount
+- final_amount
+- campaign_id
+
+DATA TYPES:
+order_id                   str
+customer_id                str
+order_date                 str
+order_time                 str
+order_status               str
+shipping_method            str
+delivery_city              str
+delivery_state             str
+coupon_code                str
+discount_percentage    float64
+marketing_channel          str
+subtotal               float64
+shipping_fee           float64
+tax_amount             float64
+final_amount           float64
+campaign_id                str
+
+MISSING VALUES:
+coupon_code    33711
+campaign_id    82821
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+  order_id customer_id order_date order_time order_status shipping_method      delivery_city delivery_state coupon_code  discount_percentage        marketing_channel  subtotal  shipping_fee  tax_amount  final_amount campaign_id
+ORD1000000  CUST103868 2025-08-16   22:35:23       Failed        Next-Day             Mumbai    Maharashtra      FEST20                  5.0            SMS Marketing   14439.9           0.0       722.0       15161.9         NaN
+ORD1000001  CUST118472 2023-02-11   18:51:17    Delivered Economy/Surface Thiruvananthapuram         Kerala      FEST20                 15.0  Social Media - Facebook    4760.0           0.0       238.0        4998.0    CAMP1008
+ORD1000002  CUST120793 2024-12-14   11:08:38    Delivered Economy/Surface             Nagpur    Maharashtra        APP5                 30.0 Social Media - Instagram     826.0           0.0        41.3         867.3    CAMP1101
+
+=================================================================
+FILE NAME: order_items.csv
+=================================================================
+Rows: 254331
+Columns: 9
+
+COLUMN NAMES:
+- order_item_id
+- order_id
+- product_id
+- quantity
+- unit_price
+- discount_percentage
+- item_revenue
+- item_cost
+- profit
+
+DATA TYPES:
+order_item_id              str
+order_id                   str
+product_id                 str
+quantity                 int64
+unit_price             float64
+discount_percentage    float64
+item_revenue           float64
+item_cost              float64
+profit                 float64
+
+MISSING VALUES:
+No missing values found.
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+order_item_id   order_id product_id  quantity  unit_price  discount_percentage  item_revenue  item_cost  profit
+   OI10000000 ORD1000000  PROD10347         4       150.0                  6.5         561.0     515.92   45.08
+   OI10000001 ORD1000000  PROD10510         1      1150.0                  5.0        1092.5     752.18  340.32
+   OI10000002 ORD1000000  PROD10305         2       960.0                  8.0        1766.4    1217.66  548.74
+
+=================================================================
+FILE NAME: payments.csv
+=================================================================
+Rows: 100000
+Columns: 8
+
+COLUMN NAMES:
+- payment_id
+- order_id
+- payment_date
+- payment_method
+- payment_status
+- amount_paid
+- transaction_fee
+- refund_amount
+
+DATA TYPES:
+payment_id             str
+order_id               str
+payment_date           str
+payment_method         str
+payment_status         str
+amount_paid        float64
+transaction_fee    float64
+refund_amount      float64
+
+MISSING VALUES:
+No missing values found.
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+payment_id   order_id payment_date payment_method payment_status  amount_paid  transaction_fee  refund_amount
+PAY1000000 ORD1000000   2025-08-16            EMI         Failed          0.0              0.0            0.0
+PAY1000001 ORD1000001   2023-02-12            UPI        Success       4998.0              0.0            0.0
+PAY1000002 ORD1000002   2024-12-14    Net Banking        Success        867.3              0.0            0.0
+
+=================================================================
+FILE NAME: products.csv
+=================================================================
+Rows: 550
+Columns: 14
+
+COLUMN NAMES:
+- product_id
+- product_name
+- category
+- subcategory
+- brand
+- price
+- cost_price
+- discount_range
+- rating_average
+- rating_count
+- stock_quantity
+- product_launch_date
+- product_type
+- return_rate_baseline
+
+DATA TYPES:
+product_id                  str
+product_name                str
+category                    str
+subcategory                 str
+brand                       str
+price                   float64
+cost_price              float64
+discount_range              str
+rating_average          float64
+rating_count              int64
+stock_quantity            int64
+product_launch_date         str
+product_type                str
+return_rate_baseline    float64
+
+MISSING VALUES:
+rating_average    4
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+product_id                             product_name category      subcategory         brand  price  cost_price discount_range  rating_average  rating_count  stock_quantity product_launch_date product_type  return_rate_baseline
+ PROD10000                         Sen Basic Staple  Grocery          Staples           Sen  220.0      173.88          0-15%             4.4            32            1422          2025-12-12      Premium                0.0118
+ PROD10001 Gupta-Chandra Essential Men's Bottomwear  Fashion Men's Bottomwear Gupta-Chandra 4060.0     2375.50         10-25%             5.0            13            1595          2023-09-01       Budget                0.1678
+ PROD10002           Murty, Advanced Women's Casual Footwear   Women's Casual        Murty, 2800.0     1740.98         25-40%             4.2           139             732          2024-12-24      Premium                0.2193
+
+=================================================================
+FILE NAME: returns.csv
+=================================================================
+Rows: 12075
+Columns: 8
+
+COLUMN NAMES:
+- return_id
+- order_id
+- customer_id
+- product_id
+- return_date
+- return_reason
+- refund_amount
+- return_status
+
+DATA TYPES:
+return_id            str
+order_id             str
+customer_id          str
+product_id           str
+return_date          str
+return_reason        str
+refund_amount    float64
+return_status        str
+
+MISSING VALUES:
+No missing values found.
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+return_id   order_id customer_id product_id return_date   return_reason  refund_amount    return_status
+RET100000 ORD1000009  CUST117396  PROD10073  2024-05-28    Changed mind         2094.4 Refund Completed
+RET100001 ORD1000019  CUST122124  PROD10077  2023-12-30 Product damaged         1040.0 Refund Completed
+RET100002 ORD1000019  CUST122124  PROD10451  2024-01-06   Wrong product            0.0          Pending
+
+=================================================================
+FILE NAME: shipments.csv
+=================================================================
+Rows: 89681
+Columns: 11
+
+COLUMN NAMES:
+- shipment_id
+- order_id
+- warehouse_city
+- delivery_city
+- shipping_method
+- dispatch_date
+- expected_delivery_date
+- actual_delivery_date
+- delivery_days
+- delivery_status
+- delayed_flag
+
+DATA TYPES:
+shipment_id                   str
+order_id                      str
+warehouse_city                str
+delivery_city                 str
+shipping_method               str
+dispatch_date                 str
+expected_delivery_date        str
+actual_delivery_date          str
+delivery_days             float64
+delivery_status               str
+delayed_flag                int64
+
+MISSING VALUES:
+actual_delivery_date    2321
+delivery_days           2321
+
+DUPLICATE ROWS:
+0
+
+SAMPLE DATA (first 3 rows):
+shipment_id   order_id warehouse_city      delivery_city shipping_method dispatch_date expected_delivery_date actual_delivery_date  delivery_days delivery_status  delayed_flag
+SHIP1000000 ORD1000001        Chennai Thiruvananthapuram Economy/Surface    2023-02-11             2023-02-19           2023-02-17            6.0       Delivered             0
+SHIP1000001 ORD1000002         Mumbai             Nagpur Economy/Surface    2024-12-15             2024-12-23           2024-12-26           11.0       Delivered             1
+SHIP1000002 ORD1000005        Chennai         Coimbatore        Standard    2025-01-09             2025-01-13           2025-01-12            3.0       Delivered             0

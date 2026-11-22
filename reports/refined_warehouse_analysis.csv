@@ -1,0 +1,8 @@
+warehouse_city,delivered_shipments,delayed_delivered_shipments,average_delivery_days,delivered_shipment_delay_rate_percent
+Kolkata,6217,2710.0,4.13,43.59
+Ahmedabad,12117,5250.0,4.13,43.33
+Delhi-NCR (Gurugram),20836,8963.0,4.1,43.02
+Chennai,10300,4417.0,4.12,42.88
+Mumbai,15155,6467.0,4.09,42.67
+Bengaluru,6427,2735.0,4.13,42.55
+Hyderabad,9627,4009.0,4.09,41.64

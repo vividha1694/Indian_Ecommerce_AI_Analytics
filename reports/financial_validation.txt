@@ -1,0 +1,43 @@
+=================================================================
+FINANCIAL DATA VALIDATION
+=================================================================
+
+1. ORDER SUBTOTAL VS SUM OF ITEM REVENUE
+Records checked: 100000
+Matching within ₹0.05: 100000
+Different: 0
+Average absolute difference: ₹0.00
+Maximum absolute difference: ₹0.00
+
+2. FINAL AMOUNT VS SUBTOTAL + SHIPPING + TAX
+Records checked: 100000
+Matching within ₹0.05: 100000
+Different: 0
+Average absolute difference: ₹0.00
+Maximum absolute difference: ₹0.00
+
+3. ITEM REVENUE VS QUANTITY, PRICE AND DISCOUNT
+Records checked: 254331
+Matching within ₹0.05: 254331
+Different: 0
+Average absolute difference: ₹0.00
+Maximum absolute difference: ₹0.00
+
+4. PROFIT VS ITEM REVENUE MINUS ITEM COST
+Records checked: 254331
+Matching within ₹0.05: 254331
+Different: 0
+Average absolute difference: ₹0.00
+Maximum absolute difference: ₹0.00
+
+5. SUCCESSFUL PAYMENT VS ORDER FINAL AMOUNT
+Records checked: 82137
+Matching within ₹0.05: 82137
+Different: 0
+Average absolute difference: ₹0.00
+Maximum absolute difference: ₹0.00
+
+=================================================================
+FINANCIAL VALIDATION COMPLETED
+Differences saved for investigation.
+=================================================================

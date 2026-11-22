@@ -1,0 +1,44 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Dataset files - download separately
+data/raw/*
+data/cleaned/*
+
+# DuckDB database files - generate locally
+database/*.duckdb
+database/*.wal
+
+# Keep project folders in GitHub
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!database/.gitkeep

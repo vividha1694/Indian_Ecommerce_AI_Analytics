@@ -1,0 +1,73 @@
+
+1. PRIMARY KEY CHECKS
+customers.customer_id: 0 duplicate keys
+orders.order_id: 0 duplicate keys
+products.product_id: 0 duplicate keys
+order_items.order_item_id: 0 duplicate keys
+payments.payment_id: 0 duplicate keys
+shipments.shipment_id: 0 duplicate keys
+returns.return_id: 0 duplicate keys
+customer_reviews.review_id: 0 duplicate keys
+marketing_campaigns.campaign_id: 0 duplicate keys
+
+2. FOREIGN KEY RELATIONSHIP CHECKS
+
+orders.customer_id -> customers.customer_id
+Non-missing values: 100000
+Unmatched values: 0
+Missing values: 0
+
+order_items.order_id -> orders.order_id
+Non-missing values: 254331
+Unmatched values: 0
+Missing values: 0
+
+order_items.product_id -> products.product_id
+Non-missing values: 254331
+Unmatched values: 0
+Missing values: 0
+
+payments.order_id -> orders.order_id
+Non-missing values: 100000
+Unmatched values: 0
+Missing values: 0
+
+shipments.order_id -> orders.order_id
+Non-missing values: 89681
+Unmatched values: 0
+Missing values: 0
+
+returns.order_id -> orders.order_id
+Non-missing values: 12075
+Unmatched values: 0
+Missing values: 0
+
+returns.customer_id -> customers.customer_id
+Non-missing values: 12075
+Unmatched values: 0
+Missing values: 0
+
+returns.product_id -> products.product_id
+Non-missing values: 12075
+Unmatched values: 0
+Missing values: 0
+
+customer_reviews.order_id -> orders.order_id
+Non-missing values: 77530
+Unmatched values: 0
+Missing values: 0
+
+customer_reviews.customer_id -> customers.customer_id
+Non-missing values: 77530
+Unmatched values: 0
+Missing values: 0
+
+customer_reviews.product_id -> products.product_id
+Non-missing values: 77530
+Unmatched values: 0
+Missing values: 0
+
+orders.campaign_id -> marketing_campaigns.campaign_id
+Non-missing values: 17179
+Unmatched values: 0
+Missing values: 82821

@@ -1,0 +1,5 @@
+return_status,total_return_records,completed_refunds,approved_returns,pending_returns,rejected_returns,completed_refund_amount,approved_refund_amount
+Refund Completed,8473,8473.0,0.0,0.0,0.0,87828257.7,0.0
+Approved,1792,0.0,1792.0,0.0,0.0,0.0,18070124.1
+Rejected,938,0.0,0.0,0.0,938.0,0.0,0.0
+Pending,872,0.0,0.0,872.0,0.0,0.0,0.0

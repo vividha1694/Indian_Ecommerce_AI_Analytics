@@ -1,0 +1,6 @@
+shipping_method,total_shipments,delivered_shipments,delayed_shipments,average_delivery_days,delay_rate_percent
+Standard,40292,36267.0,21519.0,4.81,53.41
+Express,18139,16277.0,7023.0,2.3,38.72
+Next-Day,13460,12070.0,1427.0,1.81,10.6
+Economy/Surface,13350,12054.0,4975.0,7.83,37.27
+Same-Day,4440,4011.0,2504.0,0.83,56.4

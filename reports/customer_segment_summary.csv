@@ -1,0 +1,7 @@
+customer_segment,customer_count,average_orders,average_spend_inr,total_spend_inr
+Regular Customers,6382,1.66,36635.52,233807884.37
+Loyal Customers,5176,6.28,162564.52,841433965.91
+Potential Loyalists,3595,2.6,55159.86,198299703.1
+Champions,2893,6.98,220753.86,638640911.33
+At Risk,2346,2.81,59555.68,139717627.62
+New Customers,1457,1.0,22244.14,32409710.97

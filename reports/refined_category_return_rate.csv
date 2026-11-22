@@ -1,0 +1,23 @@
+category,eligible_product_lines,returned_product_lines,product_line_return_rate_percent
+Footwear,12234,1200,9.81
+Fashion,36980,3160,8.55
+Watches,1869,117,6.26
+Bags,11244,692,6.15
+Automotive Accessories,1219,73,5.99
+Furniture,3130,186,5.94
+Appliances,13486,780,5.78
+Electronics,22160,1231,5.56
+Musical Instruments,1513,83,5.49
+Toys,10750,549,5.11
+Home & Kitchen,22698,1102,4.86
+Mobile Accessories,7251,331,4.56
+Beauty,8892,349,3.92
+Sports,5020,190,3.78
+Stationery,8698,321,3.69
+Baby Care,3066,113,3.69
+Office Supplies,1242,45,3.62
+Personal Care,8107,266,3.28
+Health & Wellness,13719,441,3.21
+Pet Supplies,2175,69,3.17
+Books,11417,348,3.05
+Grocery,13606,392,2.88

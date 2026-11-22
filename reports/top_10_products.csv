@@ -1,0 +1,11 @@
+product_id,product_name,category,units_sold,total_orders,product_revenue_inr,product_profit_inr,profit_margin_percent
+PROD10246,"Chaudhry, Advanced Smartwatche",Electronics,7372.0,3107,423414515.75,5659272.99,1.34
+PROD10203,"Mistry, Basic Large Appliance",Appliances,8117.0,3504,87640053.3,754143.07,0.86
+PROD10392,Gandhi-Lanka Ultra Storage & Container,Home & Kitchen,8948.0,3795,65816297.7,13559798.74,20.6
+PROD10445,Kala-Vaidya Deluxe Laptop,Electronics,1122.0,486,58429458.15,-2577687.39,-4.41
+PROD10435,"Boase, Ultra Air Conditioner",Appliances,1265.0,553,52509930.45,3905025.2,7.44
+PROD10301,"Choudhury, Ultra Laptop",Electronics,1777.0,759,49566590.25,159450.89,0.32
+PROD10236,Shanker-Dhar Signature Headphone,Electronics,7078.0,3002,46009139.7,2460470.66,5.35
+PROD10306,Handa Advanced Laptop,Electronics,647.0,276,43156934.1,-1469865.02,-3.41
+PROD10432,Gola Essential Fans & Cooler,Appliances,830.0,371,42737440.35,59678.65,0.14
+PROD10421,Mody-Kari Basic Smartphone,Electronics,1052.0,466,40629902.1,-1516205.58,-3.73

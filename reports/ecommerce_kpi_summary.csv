@@ -1,0 +1,2 @@
+total_orders,delivered_orders,cancelled_orders,returned_orders,failed_orders,processing_orders,delivered_order_value_inr,average_order_value_inr,delivered_product_revenue_inr,delivered_product_cost_inr,delivered_product_profit_inr,product_profit_margin_percent,order_return_rate_percent
+100000,80679,8073,6681,2880,1687,2084309803.3,25834.6,1984905302.15,1826276363.21,158628938.94,7.99,7.65
