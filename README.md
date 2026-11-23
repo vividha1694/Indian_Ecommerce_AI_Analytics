@@ -1,4 +1,9 @@
 # Indian Ecommerce AI Analytics
+## 🚀 Live Demo
+
+Explore the interactive dashboard here:
+
+[Open Indian Ecommerce AI Analytics Dashboard](https://indianecommerceaianalytics-krj2snoanaxivgyty2unsx.streamlit.app/)
 
 An end-to-end data analytics and machine learning project that explores synthetic Indian ecommerce data to identify business trends, understand customer behaviour, evaluate product profitability, and monitor operational performance.
 
